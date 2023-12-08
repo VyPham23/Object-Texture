@@ -10,12 +10,12 @@ var skybox;
 
 var create_skybox = function(scene) {
     var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var front_texture = new THREE.TextureLoader().load("public/divine_ft.jpg");
-    var back_texture = new THREE.TextureLoader().load("public/divine_bk.jpg");
-    var up_texture = new THREE.TextureLoader().load("public/divine_up.jpg");
-    var down_texture = new THREE.TextureLoader().load("public/divine_dn.jpg");
-    var right_texture = new THREE.TextureLoader().load("public/divine_rt.jpg");
-    var left_texture = new THREE.TextureLoader().load("public/divine_lf.jpg");
+    var front_texture = new THREE.TextureLoader().load("/divine_ft.jpg");
+    var back_texture = new THREE.TextureLoader().load("/divine_bk.jpg");
+    var up_texture = new THREE.TextureLoader().load("/divine_up.jpg");
+    var down_texture = new THREE.TextureLoader().load("/divine_dn.jpg");
+    var right_texture = new THREE.TextureLoader().load("/divine_rt.jpg");
+    var left_texture = new THREE.TextureLoader().load("/divine_lf.jpg");
 
     var materials = [];
     materials.push(new THREE.MeshBasicMaterial({ map: front_texture }));
